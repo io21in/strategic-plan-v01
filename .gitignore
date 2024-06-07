@@ -34,3 +34,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore everything in the strapi-backend directory except specific files
+strapi-backend/node_modules
+strapi-backend/.cache
+strapi-backend/build
+strapi-backend/dist
+
+# Un-ignore these files to ensure they are included in the repository
+!strapi-backend/
+!strapi-backend/config
+!strapi-backend/config/*
+!strapi-backend/src
+!strapi-backend/src/*
+!strapi-backend/.gitignore
+!strapi-backend/package.json
+!strapi-backend/package-lock.json
